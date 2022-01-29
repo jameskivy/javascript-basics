@@ -68,6 +68,7 @@
 // let type = points > 100 ? 'gold' : 'silver'; // condition, evaluates true if not use other
 
 // console.log(type);
+// silver
 
 
 // Logical Operators - is used to make decisions based on multiple conditions
