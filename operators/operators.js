@@ -1,7 +1,7 @@
 // // we use operators along with variables and const to create expressions and with expressions we can implment logic and algos
 
 // // types of operators 
-// // arithmetic, assignment, comparison, logical, bitwise
+// // arithmetic, assignment, comparison, logical
 
 // let x = 10;
 // let y = 3;
@@ -109,7 +109,44 @@
 // let applicationRefused = !eligibleForLoan;
 // console.log('Application Refused', applicationRefused);
 
-// Begin back at Video 8
+
+// Logical Operators with Non-booleans
+
+// false || true // True
+// false || 'Mosh' // 'Mosh'
+// false || 1 // 1
+// false || 1 || 2 // 1 //Short-circuiting - returns first truthy operand it finds
+
+// Falsy values (false) // not a boolean false
+// undefined
+// null
+// 0
+// false
+// ''
+// NaN
+
+// Anything that is not Falsy --> Truthy
+
+// let userColor = 'red';
+// let defaultColor = 'blue';
+// let currentColor = userColor || defaultColor;
+
+// console.log(currentColor);
+// print red
+
+// let userColor = undefined;
+// let defaultColor = 'blue';
+// let currentColor = userColor || defaultColor;
+
+// console.log(currentColor);
+// print blue (default color)
+
+
+
+
+
+
+
 
 
 
