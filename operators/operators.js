@@ -1,4 +1,4 @@
-// // we use operators along with variables and const to create expressions and with expressions we can implment logic and algos
+// // we use operators along with variables and const to create expressions and with expressions we can implement logic and algos
 
 // // types of operators 
 // // arithmetic, assignment, comparison, logical
@@ -163,9 +163,6 @@
 
 // console.log(a);
 // console.log(b);
-
-
-
 
 
 
