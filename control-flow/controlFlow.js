@@ -21,7 +21,7 @@
 
 // Switch...case
 
-// let role = 'moderate user';
+// let role = 'moderator'
 
 // switch(role) {      // used role to write variable - do not use condition here
 //     case 'guest':   // case compares the value of variable with something - can also use numbers or booleans here - booleans is not common
@@ -36,9 +36,93 @@
 //         console.log('Unknown User');
 // }
 
+// refactored w if...else
 // if (role === 'guest')
 //     console.log('Guest');
 // else if (role === 'moderator')
 //     console.log('Moderator user');
 // else 
 //     console.log('Unknown User');
+
+
+
+// For Loops
+// variable is apart of loop
+// repeat an action a number of times
+// (1) let i = 0 (initialize expression);
+// (2) i < 5 (condition being compared with variable and will run as long as true);
+// (3) i++ will increment by 1 each time;
+
+// print hello world 5x
+// for (let i = 0; i < 5; i++) {
+//     console.log('Hello World', i);
+// }
+
+// print odd numbers
+// for (let i = 0; i < 20; i++) {
+//     if (i % 2 !== 0)
+//     console.log(i);
+// }
+
+// print even numbers
+// for (let i = 0; i < 20; i++) {
+//     if (i % 2 === 0)
+//     console.log(i);
+// }
+
+// start and 5 and count down to one // Odd numbers in REVERSE order
+// certain problems you may want to use for loops in reverse order
+// for (let i = 5; i >= 1; i--) {
+//     if (i % 2 !== 0)
+//     console.log(i);
+// }
+
+
+// While loop 
+// you have to declare variable externally
+
+// let i = 0;
+// while (i <= 5) {
+//     if (i % 2 !== 0)
+//     console.log(i);
+//     i++;
+// }
+
+// do while
+// similar to while loops but slightly diff
+// executed at least once bc while loop is at end
+// will rarely use do while but good know
+
+// let i = 0;
+
+// do {
+//     if (i % 2 !== 0)
+//     console.log(i);
+//     i++;
+// } while (i <= 5);
+
+
+// Infinite loops
+// executes infinitely or forever
+// avoid them bc they can crash your browser or CPU
+
+// let i = 0;
+// while (i < 5) {
+//     console.log(i);
+//     // i++
+// }
+
+// while (true) {
+// }
+
+// let x = 0;
+// do {
+//     //x++
+// } while (x < 5);
+
+// for (let i = 0; i < 10; )
+
+
+
+
+
