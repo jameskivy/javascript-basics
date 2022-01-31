@@ -123,6 +123,57 @@
 // for (let i = 0; i < 10; )
 
 
+// for in
+// used to iterate over objects {} in key value pairs
+
+// const person = {
+//     name: 'James',
+//     age: 27
+// };
+
+// for (let key in person)
+// console.log(key, person[key]);
+
+// Dot Notation 
+// person.name
+
+// Bracket Notation
+// person['name']
+
+
+// For of 
+// ideal way to iterate over elements or item in an array starting w ES6
+
+// const colors = ['red', 'green', 'blue'];
+
+// for (let color of colors)
+//     console.log(color);
+
+
+// Break and Continue
+// break is used to jump out of a loop
+// continue is used to continue with an iteration
+
+// let i = 0;
+
+// while (i < 10)  {
+//     if (i === 5)
+//     break;
+//     console.log(i);
+//     i++;
+// }
+
+// while (i <= 10)  {
+//     if (i % 2 === 0) {
+//         i++;
+//         continue;
+//     }
+
+//     console.log(i);
+//     i++;
+// }
+
+
 
 
 
