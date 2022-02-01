@@ -187,6 +187,13 @@
 //     return (a > b) ? a : b;
 // }
 
+let landscape = isLandscape(400, 200)
+console.log(landscape);
+
+function isLandscape(width, height) {
+    return width > height ? width : height;
+}
+
 
 
 
