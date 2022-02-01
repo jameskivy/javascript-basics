@@ -180,19 +180,12 @@
 // Write a function that takes two numbers and returns the maximum of the two.
 // call that function and give a diff argument and make sure it's working properly
 
-// function numbers (num1, num2) {
-//     if (num1 > num2) console.log(num1);
-//     else if (num2 > num1) console.log(num2);
+// let number = max(16, 10);
+// console.log(number);
+
+// function max(a, b) {
+//     return (a > b) ? a : b;
 // }
-
-// numbers(300, 200)
-
-let number = max(16, 10);
-console.log(number);
-
-function max(a, b) {
-    return (a > b) ? a : b;
-}
 
 
 
