@@ -1,7 +1,19 @@
-// two types of conditional statement
+// two types of conditional statements
 //if...else and switch...case
 
 // if...else Example 
+
+// if (condition) {
+//     statement
+// }
+// else if (anotherCondition) {
+//     statement
+// }
+// else if (yetAnotherCondition) {
+//     statement
+// }
+// else
+//     statement
 
 // Hour- on a 24 time clock
 // If hour is between 6am and 12pm: Good morning!
@@ -19,9 +31,11 @@
 // else 
 //     console.log('Good evening');
 
+
+
 // Switch...case
 
-// let role = 'moderator'
+// let role = 'moderator';
 
 // switch(role) {      // used role to write variable - do not use condition here
 //     case 'guest':   // case compares the value of variable with something - can also use numbers or booleans here - booleans is not common
@@ -47,54 +61,76 @@
 
 
 // For Loops
+
 // variable is apart of loop
 // repeat an action a number of times
 // (1) let i = 0 (initialize expression);
 // (2) i < 5 (condition being compared with variable and will run as long as true);
 // (3) i++ will increment by 1 each time;
-
 // print hello world 5x
-// for (let i = 0; i < 5; i++) {
-//     console.log('Hello World', i);
+
+// for (initialExpression; condition; incrementExpression){
+//     statement (like if statement);
 // }
 
+
 // print odd numbers
-// for (let i = 0; i < 20; i++) {
+// for (let i = 0; i < 10; i++) {
 //     if (i % 2 !== 0)
 //     console.log(i);
 // }
 
 // print even numbers
-// for (let i = 0; i < 20; i++) {
+// for (let i = 1; i < 10; i++) {
 //     if (i % 2 === 0)
 //     console.log(i);
 // }
 
-// start and 5 and count down to one // Odd numbers in REVERSE order
+// start at 5 and count down to one // Odd numbers in REVERSE order
 // certain problems you may want to use for loops in reverse order
 // for (let i = 5; i >= 1; i--) {
 //     if (i % 2 !== 0)
 //     console.log(i);
 // }
 
+// start at 10 and count down to two // Even numbers in REVERSE order
+// for (i = 10; i >= 2; i--) {
+//     if (i % 2 === 0)
+//     console.log(i)
+// }
 
-// While loop 
+
+// While loops
+
 // you have to declare variable externally
 
 // let i = 0;
-// while (i <= 5) {
+// while(condition){
+//     statement (could be if)
+// }
+
+
+// let i = 0;
+// while (i <= 10) {
 //     if (i % 2 !== 0)
 //     console.log(i);
 //     i++;
 // }
 
-// do while
+// let i = 1;
+// while (i <= 10) {
+//     if (i % 2 === 0)
+//     console.log(i);
+//     i++;
+// }
+
+
+// do-while
 // similar to while loops but slightly diff
 // executed at least once bc while loop is at end
-// will rarely use do while but good know
+// will rarely use do while but good to know
 
 // let i = 0;
-
 // do {
 //     if (i % 2 !== 0)
 //     console.log(i);
@@ -109,40 +145,36 @@
 // let i = 0;
 // while (i < 5) {
 //     console.log(i);
-//     // i++
+//     // i++           // don't forget to increment
 // }
 
-// while (true) {
+// while (true) {       // another example 
 // }
 
 // let x = 0;
 // do {
-//     //x++
+//     //x++            // don't forget to increment
 // } while (x < 5);
 
-// for (let i = 0; i < 10; )
+// for (let i = 0; i < 10; i++)     // don't forget to increment
 
 
-// for in
-// used to iterate over objects {} in key value pairs
+// For in
+// is used to iterate over properties of an object {} in key value pairs
 
 // const person = {
 //     name: 'James',
 //     age: 27
 // };
 
+// Bracket Notation - when we do not know ahead of time what property what we are going to access
+
 // for (let key in person)
 // console.log(key, person[key]);
 
-// Dot Notation 
-// person.name
-
-// Bracket Notation
-// person['name']
-
 
 // For of 
-// ideal way to iterate over elements or item in an array starting w ES6
+// ideal way to iterate over elements or items in an array starting w ES6
 
 // const colors = ['red', 'green', 'blue'];
 
@@ -150,13 +182,14 @@
 //     console.log(color);
 
 
+
 // Break and Continue
 // break is used to jump out of a loop
-// continue is used to continue with an iteration
+// continue is used to continue with an iteration - ugly way of writing code something you want use often
 
 // let i = 0;
 
-// while (i < 10)  {
+// while (i <= 10) {
 //     if (i === 5)
 //     break;
 //     console.log(i);
@@ -168,107 +201,6 @@
 //         i++;
 //         continue;
 //     }
-
 //     console.log(i);
 //     i++;
 // }
-
-/////////////////////////////////
-// Exercises
-/////////////////////////////////
-
-// Write a function that takes two numbers and returns the maximum of the two.
-// call that function and give a diff argument and make sure it's working properly
-
-// let number = max(16, 10);
-// console.log(number);
-
-// function max(a, b) {
-//     return (a > b) ? a : b;
-// }
-
-// Write a function that returns true if picture is landscape. If portrait return false.
-
-// console.log(isLandscape(1000, 600));
-
-// function isLandscape(width, height) {
-//     return (width > height);
-// }
-
-
-
-// Divisible by 3 => Fizz
-// Divisible by 5 => Buzz
-// Divisible by both 3 and 5 => FizzBuzz
-// Not divisible by 3 or 5 => input
-// Not a number => 'Not a number'
-
-
-// const output = fizzBuzz(false);
-// console.log(output);
-
-// function fizzBuzz(input) {
-//     if (typeof input !== 'number')
-//         return NaN;
-    
-//     if ((input % 3 === 0) && (input % 5 === 0))
-//         return 'FizzBuzz';
-
-//     if (input % 3 === 0)
-//         return 'Fizz';
-
-//     if (input % 5 === 0)
-//         return 'Buzz';
-
-//     return input;
-// }
-
-
-// Speed Limit = 70
-// 5 > 1 point
-// Math.floor(1.3)
-// 12 points -> suspended
-
-// checkSpeed(130);
-
-// function checkSpeed(speed) {
-//     const speedLimit = 70;
-//     const kmPerPoint = 5;
-
-//     if (speed < speedLimit + kmPerPoint)
-//         console.log('Ok');
-//     else {
-//         let points = Math.floor((speed - speedLimit) / kmPerPoint);
-//         if (points >= 12)
-//             console.log('License suspended');
-//         else
-//         console.log('Points', points);
-//     }
-// }
-
-
-// showNumbers(15);
-
-// function showNumbers(limit) {
-//     for (let i = 0; i <= limit; i++) {
-//         const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
-//         console.log(i, message);
-//     }
-// }
-
-
-
-const array = [0, null, undefined, '', 1]
-
-console.log(countTruthy(array));
-
-function countTruthy(array) {
-    let count = 0;
-    for (let value of array)
-    if (value)
-    count++;
-    return count;
-}
-
-
-
