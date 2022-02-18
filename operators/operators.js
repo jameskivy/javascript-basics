@@ -3,6 +3,9 @@
 // // types of operators 
 // // arithmetic, assignment, comparison, logical
 
+
+// Arithmetic operators
+
 // let x = 10;
 // let y = 3;
 
@@ -22,33 +25,38 @@
 // console.log(--y);
 
 
-//// Assignment operator
+//// Assignment operators
 
 // let x = 10;
 
 // x = x + 5;
-// x += 5;
+// x += 5;   // shorthand
+// console.log(x)
 
 // x = x * 3;
-// x *= 3;
+// x *= 3; // shorthand
+// console.log(x)
 
 
 // Comparison operators 
+
 // let x = 1
 
-// //Relational 
+// //Relational operators
 // console.log(x > 0); // greater than
 // console.log(x >= 1); // greater than or equal to
 // console.log(x < 1); // greater than or equal to
 // console.log(x <= 1); // less than or equal to
 
-// // Equality
+// // Equality operators
 // console.log(x === 1); // equal
 // console.log(x !== 1); // not equal
 
-// Strict equality (type + value)
+
+// Strict equality (compares type + value)
 // console.log(1 === 1); // true both equals
 // console.log('1' === 1); // false both have to match
+
 
 // Lose Equality (compares value) - doesn't care about types matching
 // right side will convert to what is on left side and will only check if values are equal
@@ -59,12 +67,12 @@
 
 
 
-/// Ternary Operators or Conditional operator
+/// Ternary Operators or Conditional Operator
 
 // If a customer has more than 100 points they are a 'gold' customer, 
 // otherwise they are a silver customer
 
-// let points = 90;
+// let points = 99;
 // let type = points > 100 ? 'gold' : 'silver'; // condition, evaluates true if not use other
 
 // console.log(type);
@@ -93,7 +101,7 @@
 // does not matter which side (can be let or right)
 
 // Example
-// let highIncome = true;
+// let highIncome = false;
 // let goodCreditScore = true;
 // let eligibleForLoan = highIncome || goodCreditScore;
 
@@ -113,12 +121,12 @@
 
 // Logical Operators with Non-booleans
 
-// false || true // True
-// false || 'Mosh' // 'Mosh'
-// false || 1 // 1
-// false || 1 || 2 // 1 //Short-circuiting - returns first truthy operand it finds
+// false || true             // True
+// false || 'Mosh'           // 'Mosh'
+// false || 1               // 1
+// false || 1 || 2          // 1   -  //Short-circuiting - returns first truthy operand it finds
 
-// Falsy values (false) // not a boolean false
+// Falsy values (false)     // not a boolean false
 // undefined
 // null
 // 0
@@ -132,38 +140,33 @@
 // let defaultColor = 'blue';
 // let currentColor = userColor || defaultColor;
 
-// console.log(currentColor);
-// print red
+// console.log(currentColor)  // print red
+
 
 // let userColor = undefined;
-// let defaultColor = 'blue';
+// let defaultColor = 'green';
 // let currentColor = userColor || defaultColor;
 
-// console.log(currentColor);
-// print blue (default color)
+// console.log(currentColor);   // print green (default color)
 
 
 // Operators Precedence
 
-// let x = 2 + 3 * 4
+// let x = 2 + 3 * 4;
 // console.log(x);
-// //14
 
 // let y = (2 + 3) * 4
 // console.log(y);
-//20
 
-// swapping variables 
+
+// Swapping variables exercise
+
 // let a = 'red';
 // let b = 'blue';
-
-// let c = a; 
-// a = b;
-// b = c;
-
 // console.log(a);
 // console.log(b);
-
-
-
-
+// let c = a;
+// a = b;
+// b = c;
+// console.log(a);
+// console.log(b);

@@ -229,26 +229,46 @@
 // Math.floor(1.3)
 // 12 points -> suspended
 
-checkSpeed(130);
+// checkSpeed(130);
 
-function checkSpeed(speed) {
-    const speedLimit = 70;
-    const kmPerPoint = 5;
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const kmPerPoint = 5;
 
-    if (speed < speedLimit + kmPerPoint)
-        console.log('Ok');
-    else {
-        let points = Math.floor((speed - speedLimit) / kmPerPoint);
-        if (points >= 12)
-            console.log('License suspended');
-        else
-        console.log('Points', points);
-    }
+//     if (speed < speedLimit + kmPerPoint)
+//         console.log('Ok');
+//     else {
+//         let points = Math.floor((speed - speedLimit) / kmPerPoint);
+//         if (points >= 12)
+//             console.log('License suspended');
+//         else
+//         console.log('Points', points);
+//     }
+// }
+
+
+// showNumbers(15);
+
+// function showNumbers(limit) {
+//     for (let i = 0; i <= limit; i++) {
+//         const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+//         console.log(i, message);
+//     }
+// }
+
+
+
+const array = [0, null, undefined, '', 1]
+
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+    let count = 0;
+    for (let value of array)
+    if (value)
+    count++;
+    return count;
 }
-
-
-
-
 
 
 
