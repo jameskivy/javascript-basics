@@ -125,7 +125,8 @@
 // }
 
 
-// do-while
+// Do-While Loops
+
 // similar to while loops but slightly diff
 // executed at least once bc while loop is at end
 // will rarely use do while but good to know
@@ -160,6 +161,7 @@
 
 
 // For in
+
 // is used to iterate over properties of an object {} in key value pairs
 
 // const person = {
@@ -174,6 +176,7 @@
 
 
 // For of 
+
 // ideal way to iterate over elements or items in an array starting w ES6
 
 // const colors = ['red', 'green', 'blue'];
