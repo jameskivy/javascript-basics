@@ -23,7 +23,7 @@
 //     }, 
 //     isVisible: true, 
 //     draw: function() {
-//         console.log('draw')
+//         console.log('draw');
 //     }
 // };
 
@@ -154,4 +154,173 @@
 
 // increase(obj); // we get 11 bc the obj is passed by it's reference
 // console.log(obj); // value of 11
+
+
+
+////// Enumerating Properties of an Object
+
+// const circle = {
+//     radius: 1,
+//     draw () {
+//         console.log('draw;')
+//     }
+// };
+
+// for (let key in circle) // iterate over properties in object
+//     console.log(key, circle[key]);   // if want value of property or key use bracket notation
+
+// for (let key of circle)    // 'of' is only use for iterables objects are not iterable (only used for arrays and maps)
+//     console.log(key);      // easiest way
+
+// however you may use the below as well
+// for (let key of Object.keys(circle))    // can get keys and will return an array (string array) - Object is built in constructor function
+    // console.log(key);
+
+// for (let entry of Object.entries(circle)) // return each key value pair as an array and not string array
+    // console.log(entry);
+
+    // if you want to see if a particular object has a given property or method us in operator
+
+// if ('radius' in circle)     // with in operator we can see if property or method exists in a given object
+    // console.log('yes');     // will print yes if property exist - nothing will appear in console if it does not
+
+
+//// Cloning an Object
+
+// const circle = {
+//     radius: 1, 
+//     draw () {
+//         console.log('draw');
+//     }
+// };
+
+// Object.assign copies properties and methods from one or more source objects into a target object {} and 
+// we can use to clone an object or combine multiple objects into a single object
+
+// spread operator is used to spread an object - which means getting all of properties and methods and putting them into
+// another object 
+
+//// this way is old ////////
+// const another = {};
+
+// for (let key in circle)
+//     another[key] = circle[key];
+
+
+// does same thing as above three lines
+// const another = Object.assign({}, circle); // 
+
+
+// adding properties 
+// const another = Object.assign({
+//     color: 'yellow',
+// }, circle);
+
+// use spread operator - easiest way to clone
+// const another = { ...circle };
+
+//     console.log(another);
+
+
+
+//// Garbage Collection
+// garbage collector jobs is to find variable and const that are no longer used and deallocate the memory that was allocated earlier
+// runs in background behind scenes - have no control - do not have to worry about this as JS developer
+
+// let circle = { };   // memory is automatically allocate to object once initialized 
+    // console.log(circle) // next we can use and we do not have to deallocate
+
+
+
+// Built-in Objects - Math (see MDN)
+// if you have to use math in applications refer to math methods ex below:
+
+// Math.random() - returns new random number b/w 0-1 - function can be written to get random # b/w two values
+// Math.round(1.9) - will return 2
+// Math.max(1, 2, 3, 4, 5) - will return 5 in console
+// Math.min(1, 2, 3, 4, 5) - will return 1 in console
+
+
+// Built-in Objects - String
+// string is primitive type and primitive types do not have properties and methods only objects do
+// two kinds of strings 
+
+// String primitive
+// search javascript string
+// when we use . notation - wraps this w a string object and can work w it
+// const message = ' This is my first message ';
+// user types a certain numbers of characters - length for limit of characters = < then 100 characters in input field
+// console.log(message.length);  // length property returns number of characters in a string
+// console.log(message[0]);     // returns 'T' - access a character at given index
+// console.log(message.includes('my'));     // returns true bc it has the word my
+// console.log(message.startsWith('This')); // returns true - searches are case sensitive - lowercase t return false
+// console.log(message.endsWith('e'));     // returns true for last character
+// console.log(message.indexOf('my'));      // returns 8 starting point - used for finding index of given character or string inside the string use this
+// console.log(message.replace('first', 'second'));    // returns new string and does not modify the original one
+// console.log(message);   // will still print original
+// console.log(message.toUpperCase())  // will print in CAPS
+// console.log(message.trim());    // gets rid of white space - trimLeft() and trimRight() also exists
+// console.log(typeof(message));
+
+// Escape notation
+// const message2 = 'This is my third \'time doing this'; // single quote is apart of this string
+// const message3 = 'This is my\n third time doing this'; // starts new line backlash n
+// console.log(message2); 
+// console.log(message3.split(' ')); // splits sentence and returns an array of items
+
+// String object
+// constructor function below:
+// const another = new String('hi') // pass string here
+// console.log(typeof(another))
+
+
+// Template Literals
+// we can format string how we want to particularly useful for email
+// we can add placeholders ${expression here} - we can pass name of variable or constant
+// no need to concatenate really
+// we can add any expression that produces a value in b/w curly braces and can also call function that 
+// returns a value
+
+// Object {}
+// Boolean true, false
+// String '', ""
+// Template ``
+
+// const name = 'James';
+
+// const another = 
+// `Hi ${name}, 
+
+// Thank you for reaching out regarding this role. You are number ${1 + 3} on my list
+// to interview. 
+
+// Best regards, 
+// Emily`;
+
+// console.log(another);
+
+
+
+// Built-In Object - Date 
+// Note: there are more built-in objects and will learn as course continues
+// constructor function
+
+// const now = new Date(); 
+// const date1 = new Date('May 11 2018 09:00');
+// const date2 = new Date(2018, 4, 11, 9);
+
+// now.setFullYear(2021);  // changed year here
+
+// console.log(now.toLocaleDateString());
+// console.log(now.toLocaleTimeString());
+// console.log(now.toDateString());
+// console.log(now.toTimeString());
+// console.log(now.toISOString()); // method - date T then time - commonly used - talks to backend -transfer b/w client and server
+
+
+
+
+
+
+
 
