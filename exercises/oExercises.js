@@ -155,8 +155,3 @@
 // let restaurants = [
 //     { averagePerPerson: 5, }
 // ];
-
-
-
-
-
