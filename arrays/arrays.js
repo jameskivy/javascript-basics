@@ -94,10 +94,10 @@
 // whenever you want to pass a function as a callback function or as a argument to a different method
 // you can use arrow function syntax
 
-const courses = [
-    { id: 1, name: 'a' },
-    { id: 2, name: 'b' },
-];
+// const courses = [
+//     { id: 1, name: 'a' },
+//     { id: 2, name: 'b' },
+// ];
 
 // removed function keyword
 // put fat arrow b/w parameters of the function and it's body to separate
