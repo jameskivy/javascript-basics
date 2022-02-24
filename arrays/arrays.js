@@ -120,7 +120,154 @@
 // console.log(course);
 
 
+
 /// Removing Elements from an Array /////
+
+// const numbers = [1, 2, 3, 4];
+
+// End
+// remove last element from array and return it
+// const last = numbers.pop(); 
+
+// Beginning
+// remove element from beginning of array - return element removed
+// const first = numbers.shift(); 
+
+// Middle
+// removing elements using splice 1) 2 begins at index, 2) 1 stands for first number at index
+// remember 1 can be increased to 2 and two elements will be removed
+// numbers.splice(2, 2);
+// console.log(numbers);
+
+
+
+///// Emptying an Array //////
+
+// let numbers = [1, 2, 3, 4];
+// let another = numbers;
+
+// Solution 1
+// numbers = [];
+
+// reassign to new array
+// old array is still in memory
+// if no other references to this object eventually it will be removed by garbage collector
+// so if we have another variable called another and it pointing to same object (= numbers)
+// this original array will not be garbage collected
+
+// console.log(another); // points to original array
+// console.log(numbers); // numbers is now pointing to new empty array bc of assignment
+
+// empty an array this way works if you do not have any other references to the original array
+// if you have multiple references pointing to an array this solution is not the best 
+
+
+///// Solution 2 ////
+// numbers.length = 0;
+
+// empty array by setting length property to 0 and this will remove all elements
+// the original array is truncated so it doesn't matter how many references you have to that array
+// prob best solution or solution 1 if you don't have multiple references
+
+// console.log(numbers);
+// console.log(another);
+
+
+//// Solution 3 ////
+// numbers.splice(0, numbers.length);
+
+// splice method you can go to a given position and remove one or more elements
+// pretty noisy code
+
+
+/// Solution 4 /////
+// numbers.pop();
+
+// pop method removes the last element from an array
+// we can use loop here and keep calling this method as long as we have an element
+// noisy code prob not the best way
+
+// while (numbers.length > 0)
+//     numbers.pop();
+
+// console.log(numbers);
+// console.log(another);
+
+
+
+//// Combining and Slicing Arrays //////
+
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// to combine two arrays we can use concat method - returns new array
+
+// const combined = first.concat(second);
+
+// slice method = slice array into two parts
+// pass 2 to 0 based index and end at 4
+
+// const slice = combined.slice(2, 4); // logs [ 3, 4 ]
+// const slice = combined.slice(2); // logs [ 3, 4, 5, 6 ]
+// const slice = combined.slice(); // logs original array if nothing passed
+
+// console.log(combined); // logs [ 1, 2, 3, 4, 5, 6 ]
+
+// console.log(slice); // logs [ 3, 4 ]
+
+// w both methods remember when dealing wih primitives they will be copied into target array
+// but if you are dealing w objects the objects themselves are not copied the references are copied
+
+
+// const fourth = [{ id: 1 }]; // reference type
+// const fifth = [4, 5, 6];
+
+// when we call concat method the {id} object is not copied to the combined2 array
+// only its reference is copied
+
+// const combined2 = fourth.concat(fifth);
+
+// go to first array and get first element which is an object and change id to 10
+// if will be changed to 10 as well
+
+// fourth[0].id = 10;
+
+// the same principle above goes to the slice method
+// remember primitive is copied by value
+// if object type copied by reference
+
+// const slice2 = combined2.slice();
+
+// console.log(combined2);
+// console.log(slice2);
+
+
+///// The Spread Operator //////
+// can be used to combined two arrays as well
+// cleaner and more flexible 
+
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// const combined = first.concat(second);
+
+// spread operator is used like this
+// elements are returned individually
+// const combined = [...first, ...second]; // logs [1, 2, 3, 4, 5, 6]
+
+// const combined = [...first, 'a', ...second, 'b']; // logs [1, 2, 3, 'a', 4, 5, 6, 'b']
+// console.log(combined);
+
+// if no argument passed in slice method it will return original array
+// const copy = combined.slice();
+
+// create new array and return to put in new array
+// spread ...combined array
+// const copy = [...combined];
+// console.log(copy);
+
+
+
 
 
 
