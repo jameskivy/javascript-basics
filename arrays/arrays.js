@@ -267,6 +267,36 @@
 // console.log(copy);
 
 
+///// Iterating an Array //////
+
+// we have diff ways to iterate an array
+// use for of loop to iterate an array
+
+// const numbers = [1, 2, 3];
+
+// for (let number of numbers) // number will be set to each element in array
+//     console.log(number);
+// we don't use index w for of loop but you can use w for in loop
+
+// you can also use forEach() method to iterate an array
+// all arrays have this method and takes a callback function
+// pass a function here -> function takes parameter (number) -> log number on console
+// once forEach method is called function will be executed for each element in the array
+// each element will be passed as an argument to this function
+
+// numbers.forEach(function(number) {
+//     console.log(number);
+// });
+
+// we can also rewrite using arrow function syntax 
+// numbers.forEach(number => console.log(number));
+
+// callback function can optionally take second parameter known as the index
+// numbers.forEach((number, index) => console.log(index, number));
+
+
+/////// Joining Arrays /////////
+
 
 
 
