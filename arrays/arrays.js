@@ -297,6 +297,127 @@
 
 /////// Joining Arrays /////////
 
+// join has a separator that can be passed and it is optional
+// have to pass a string
+
+// const numbers = [1, 2, 3];
+// const joined = numbers.join(',');
+// console.log(joined); // logs [1, 2, 3]
+
+// another method that goes hand in hand w join is the split method but it is not apart of arrays
+// it's part of strings
+// have to pass a separator string
+
+// const message = 'This is my first message';
+// const parts = message.split(' '); // separate using a white space
+// console.log(parts);
+
+// now that we have an array return we can use the join method - 5 elements returned
+// we can use join to combine elements using a separator
+
+// const combined = parts.join('-');
+// console.log(combined);
+
+// method is useful when using a URL slug
+// cannot have white spaces in url
+
+
+
+////// Sorting Arrays /////
+
+// sort method - converts each element into a string and sorts the element in the array
+// easy to use when you have numbers and strings in an array
+// however we you have objects in array it does not work by default
+
+// const numbers = [2, 3, 5, 4, 1]
+// numbers.sort();
+// console.log(numbers); // logs [1, 2, 3, 4, 5]
+
+// a companion method is the reverse method
+// reverse method - we can reverse the order of elements in an array
+
+// numbers.reverse();
+// console.log(numbers);
+
+
+// sort will not work here bc its an object - nothing happens
+
+// const courses = [
+//     { id: 1, name: 'Node.js' },
+//     { id: 2, name: 'javaScript' },
+// ];
+
+// sort can take a function and compare objects
+// not using else if bc it just creates extra noise in the code
+// if lower case j it will not switch due to ascii table - each letter represents a number
+
+// courses.sort(function(a, b){
+// a < b => -1
+// a > b => 1
+// a === b => 0
+
+//     const nameA = a.name.toUpperCase(); // toLowerCase() would work also;
+//     const nameB = b.name.toUpperCase(); // toLowerCase() would work also;
+
+//     if (nameA < nameB) return -1;
+//     if (nameA > nameB) return 1;
+//     return 0;
+
+// });
+// console.log(courses);
+
+
+
+///// Testing the Elements of an Array /////
+
+// every and some methods
+
+// every has a callback function that takes three parameters 1) value: number, 2)index: number and 3) array and returns a boolean value
+// every method is going to run this function on each element and once it returns false it stops running
+
+// const numbers = [1, -1, 2, 3];
+
+// const allPositive = numbers.every(function(value) {
+//     return value >= 0;
+// });
+
+// console.log(allPositive);
+
+
+// some method checks to see if at least one element matches this criteria
+// some method will run the callback function on every element in the array
+
+// const numbers1 = [1, -1, 2, 3];
+
+// const atLeastOnePositive = numbers1.some(function(value) {
+//     return value >= 0;
+// });
+
+// console.log(atLeastOnePositive);
+
+
+
+//// Filtering an Array //////
+// filter array based on search criteria
+// filter method will take callback function and check each element and return each value and create a new array
+
+// const numbers = [1, -1, 2, -2, 3];
+
+// const filtered = numbers.filter(n => n >= 0);
+
+// console.log(filtered);
+
+
+/////// Mapping an Array ////////
+
+
+
+
+
+
+
+
+
 
 
 
