@@ -464,8 +464,48 @@
 
 
 /////////// Reducing an Array //////////
+// can use to calculate a total costs in a shopping cart
+// sum of all numbers in array
+
+// const numbers = [1, -1, 2, 3];
+
+// let sum = 0;
+// for (let n of numbers)
+//     sum += n;
+
+// console.log(sum);
+
+// refactor below
+
+// reduce method can reduce all of the elements in an array into a single value
+// single value can be a number, string, obj, or anything
+// we want to reduce the elements in an array into a single number
+// takes a callback function with two parameters 
+// 1) accumulator - just similar to sum above something we initialize 
+// 2) currentValue - will be set to one element in the array
+// in each function call we want to get currentValue and add it to the accumulator
 
 
+// a = 0, c = 1 as result a = 1
+// a = 1, c = -1 as result a = 0, // adding here
+// a = 0, c = 2 as result a = 2
+// a = 2, c = 3 as result 5
+
+// const sum = numbers.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }, 0);
+
+// console.log(sum);
+
+/// OR for shorter code like this /////
+
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+
+// console.log(sum);
+
+// initialize accumulator to 0 here. second argument to the reduce method pass 0
+// reduce method has two arguments one is a callback function and second argument is the initial value for the accumulator 
+// note you can take away second argument 0 and accumulator will automatically be set to first element in array which is 1
 
 
 
