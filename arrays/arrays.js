@@ -405,12 +405,65 @@
 
 // const filtered = numbers.filter(n => n >= 0);
 
-// console.log(filtered);
+// console.log(filtered); // logs [1, 2, 3]
+
 
 
 /////// Mapping an Array ////////
 
+// map method we can map each item in an array to something else
+// construct some html mark up using the elements in this array
+// map takes a callback function
+// map these numbers to strings but you can also map them to objects
 
+// const numbers = [1, -1, 2, 3];
+
+// const filtered = numbers.filter(n => n >= 0);
+// console.log(filtered); // logs [1, 2, 3]
+
+// const items = filtered.map(n => '<li>' + n + '</li>'); // concat using + sign
+// console.log(items); // logs [ '<li>1</li>', '<li>2</li>', '<li>3</li>' ] 
+// // returns array of strings
+
+// const html = '<ul>' + items.join(' ') + '</ul>';
+// console.log(html); // logs <ul><li>1</li> <li>2</li> <li>3</li></ul>
+// // by default comma is used for join
+
+
+
+// MAPPING OBJECTS
+// filter and map return new array they do not modify the original array
+
+// const numbers2 = [1, -1, 2, 3];
+
+// const filtered2 = numbers2.filter(n => n >= 0);
+// console.log(filtered2); // logs [1, 2, 3]
+
+// // const items2 = filtered2.map(n => { value: n}); // undefined bc by default JS reads obj as a code block - parse
+// const items2 = filtered2.map(n => ({ value: n })); // if return obj wrap obj in () so JS won't read this as a code block
+
+// console.log(items2); // [ { value: 1 }, { value: 2 }, { value: 3 } ]
+// // we mapped each number to an object with a value property
+
+
+// map and filter method are chainable which means we can call them one after another
+// refactored to better and cleaner code
+
+// const numbers3 = [1, -1, 2, 3];
+
+// const items3 = numbers3
+//     .filter(n => n >= 0)
+//     .map(n => ({ value: n }))
+//     .filter(obj => obj.value > 1) // logs obj syntax
+//     .map(obj => obj.value); /// logs [2, 3]
+
+// console.log(items3);
+
+// power of chaining and mapping
+
+
+
+/////////// Reducing an Array //////////
 
 
 
