@@ -1,7 +1,7 @@
-// // we use operators along with variables and const to create expressions and with expressions we can implement logic and algos
+// we use operators along with variables and const to create expressions and with expressions we can implement logic and algos
 
-// // types of operators 
-// // arithmetic, assignment, comparison, logical
+// types of operators 
+// arithmetic, assignment, comparison, logical
 
 
 // Arithmetic operators
@@ -9,13 +9,13 @@
 // let x = 10;
 // let y = 3;
 
-// // expression is something that produces a value
-// // console.log(x + y); // add          
-// // console.log(x - y); // subtraction
-// // console.log(x * y); // multiply     
-// // console.log(x / y); // division
-// // console.log(x % y); // remainder of division
-// // console.log(x ** y); // x to the power of y
+// expression is something that produces a value
+// console.log(x + y); // add          
+// console.log(x - y); // subtraction
+// console.log(x * y); // multiply     
+// console.log(x / y); // division
+// console.log(x % y); // remainder of division
+// console.log(x ** y); // x to the power of y
 
 // // Increment (++)
 // console.log(x++);
@@ -40,12 +40,12 @@
 
 // Comparison operators 
 
-// let x = 1
+// let x = 1;
 
 // //Relational operators
 // console.log(x > 0); // greater than
 // console.log(x >= 1); // greater than or equal to
-// console.log(x < 1); // greater than or equal to
+// console.log(x < 1); // less than
 // console.log(x <= 1); // less than or equal to
 
 // // Equality operators
