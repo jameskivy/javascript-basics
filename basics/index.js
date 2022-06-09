@@ -95,11 +95,11 @@ greet('Mary', 'Smith')
 
 // Function that calculating a value
 
-// function square(number) {
-//     return number * number;
-// }
+function square(number) {
+    return number * number;
+}
 
 // let number = square(2); // square(2) returns a value - now we can use this value to initialize a variable
 // console.log(number);
 // or 
-// console.log(square(4));
+console.log(square(10));
